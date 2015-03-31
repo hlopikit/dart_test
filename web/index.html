@@ -33,11 +33,14 @@
   <!-- link rel="stylesheet" href="styles/main.css" -->
 </head>
 
-<body>
-
-  <canvas id="stage" width="800" height="600"></canvas>
-
-  <script type="application/dart" src="main-v2.dart"></script>
+<body style="background-color: lightgrey;">
+  <div style="width: 800px; margin: 0 auto;">
+    <canvas id="stage" width="800" height="600" style="margin-top: 100px;"></canvas>
+    <button style="width: 100%" id="FOO">FOO</button>
+    <pre>fps: <span id="fps"></span></pre>
+  </div>
+  <script type="application/dart" src="main-v4.dart"></script>
   <script data-pub-inline src="packages/browser/dart.js"></script>
+  <img style="display: none" src="images/touch/chrome-touch-icon-192x192.png" id="im" />
 </body>
 </html>
